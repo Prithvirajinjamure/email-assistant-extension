@@ -1,0 +1,42 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Email Scheduler Assistant</title>
+</head>
+<body>
+  <h1>Email Scheduler Assistant</h1>
+  <button id="login">Login with Google</button>
+  <script src="popup.js"></script>
+</body>
+</html> -->
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Scheduler Assistant</title>
+  <style>
+    body { width: 300px; padding: 10px; }
+    #status { margin-top: 10px; padding: 5px; }
+    .success { color: green; }
+    .error { color: red; }
+    .processing { color: blue; }
+    #emailInfo { margin-top: 10px; border-top: 1px solid #ccc; padding-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>Email Scheduler</h1>
+  <button id="login">Process Emails</button>
+  <div id="status"></div>
+  <div id="emailInfo" style="display:none;">
+    <h3>Processed Email:</h3>
+    <p><strong>Subject:</strong> <span id="emailSubject"></span></p>
+    <p><strong>From:</strong> <span id="emailSender"></span></p>
+    <p><strong>Event Time:</strong> <span id="eventTime"></span></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

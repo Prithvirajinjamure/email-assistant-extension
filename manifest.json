@@ -1,0 +1,34 @@
+{
+  "manifest_version": 3,
+  "name": "Email Scheduler Assistant",
+  "description": "Reads Gmail for events and schedules them in Google Calendar",
+  "version": "1.0",
+  "permissions": [
+    "identity",
+    "storage",
+    "notifications",
+    "alarms",
+    "https://www.googleapis.com/*"
+  ],
+  "oauth2": {
+    "client_id": "496812821584-uum3k881ek464qcfa49fldbngtv5vvtv.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/gmail.readonly",
+      "https://www.googleapis.com/auth/calendar.events"
+    ]
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://www.googleapis.com/"
+  ],
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
